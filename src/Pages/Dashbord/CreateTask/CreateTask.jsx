@@ -3,10 +3,12 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import useAxios from "../../../Hook/useAxios";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const CreateTask = () => {
     const {user} = useContext(AuthContext)
     const axiosPb = useAxios()
+    const navigate = useNavigate()
     const { register, handleSubmit,reset } = useForm()
 
     const onSubmit = (data) => {
@@ -27,6 +29,7 @@ const CreateTask = () => {
             if(res.data.insertedId){
                 toast.success('Successfully toasted!')
                 reset()
+                navigate("/dashbord/previoustask")
             }
         })
 

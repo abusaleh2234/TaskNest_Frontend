@@ -44,7 +44,7 @@ const Navber = () => {
         {
             user && <li className="block py-2 px-2 text-black">
             <NavLink
-                to="/dashbord"
+                to="/dashbord/previoustask"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-[#47beff]" : ""
                 }

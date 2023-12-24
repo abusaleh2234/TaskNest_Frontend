@@ -19,8 +19,8 @@ const Dashbord = () => {
 
     return (
         <div>
-            <div className="md:flex gap-4">
-                <div className="w-2/12 min-h-screen bg-[#2892fd] p-3">
+            <div className="lg:flex gap-4">
+                <div className="lg:w-2/12 min-h-screen bg-[#2892fd] p-3">
                     <div className="flex flex-col justify-center items-center">
                         <img src={userInfo.photo} alt="" />
                         <h3 className="text-lg font-medium">{userInfo.name}</h3>
@@ -58,7 +58,7 @@ const Dashbord = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="w-10/12 py-4 px-2">
+                <div className="lg:w-10/12 py-4 px-2">
                     {/* <div className="bg-slate-300 w-full">
                     
                     </div> */}
