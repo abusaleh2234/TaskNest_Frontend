@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const axiosPb = axios.create({
-    baseURL: "http://localhost:5000/"
+    baseURL: "https://task-nest-backend.vercel.app"
 })
 const useAxios = () => {
 

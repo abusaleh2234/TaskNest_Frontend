@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -20,9 +23,10 @@ const Footer = () => {
                     <h2 className="text-xl font-bold">Contuct</h2>
                     <p>Dhaka, Bangladesh</p>
                     <ul>
-                        <li>FaceBook</li>
-                        <li>Twiter</li>
-                        <li>Youtube</li>
+                        <li className=""><a href="" className="flex items-center gap-2"><span><FaFacebook /></span>FaceBook</a></li>
+                        <li className=""><a href="" className="flex items-center gap-2"><span><FaTwitter /></span>Twiter</a></li>
+                        <li className=""><a href="" className="flex items-center gap-2"><span><FaYoutube /></span>Youtube</a></li>
+
                     </ul>
                 </div>
             </div>

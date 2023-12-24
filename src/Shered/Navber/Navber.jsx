@@ -21,7 +21,7 @@ const Navber = () => {
                 Home
             </NavLink>
         </li>
-        <li className="block py-2 px-2 text-black">
+        {/* <li className="block py-2 px-2 text-black">
             <NavLink
                 to="/alltask"
                 className={({ isActive, isPending }) =>
@@ -30,7 +30,7 @@ const Navber = () => {
             >
                 All Task
             </NavLink>
-        </li>
+        </li> */}
         <li className="block py-2 px-2 text-black">
             <NavLink
                 to="/about"
